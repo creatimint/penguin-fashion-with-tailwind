@@ -26,17 +26,19 @@
 <body class="roboto-font">
     <header class="bg-[#FFFBF0]">
         <!-- navigation bar -->
-        <nav class="mx-auto max-w-6xl lg:flex justify-between pt-10">
+        <nav class="flex mx-auto max-w-6xl lg:flex justify-between pt-10">
             <div>
                 <img class="w-72" src="icons/logo.png" alt="logo">
             </div>
-            <div class="flex gap-14">
-                <p>Home</p>
-                <p>Product</p>
-                <p>About us</p>
-                <p>Contact us</p>
+            <div class="gap-14 lg:inline-flex hidden">
+                <ul><a href="#">Home</a></ul>
+                <ul><a href="#">Product</a></ul>
+                <ul><a href="#">About us</a></ul>
+                <ul><a href="#">Contact us</a></ul>
             </div>
-            <i class="fa-solid fa-bars lg:hidden"></i>
+            <div class="lg:hidden">
+                <i class="fa-solid fa-bars"></i>
+            </div>
         </nav>
         <!-- banner section -->
         <div class="max-w-6xl mx-auto lg:flex justify-between items-center pt-10 pb-11 lg:pb-[130px]">
@@ -61,7 +63,7 @@
     </header>
     <main>
         <!-- Women's jacket section -->
-         <div class="max-w-6xl mx-auto mb-24 mt-12">
+        <div class="max-w-6xl mx-auto mb-24 mt-12">
             <h1 class="uppercase bebas-neue-font text-[#363958] text-5xl mb-5">W0Man Jacket</h1>
             <!-- cards-container -->
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-7">
@@ -118,7 +120,47 @@
                     </div>
                 </div>
             </div>
-         </div>
+        </div>
+         <!-- Features section -->
+        <div class="max-w-6xl mx-auto grid lg:grid-cols-2 grid-cols-1">
+            <!-- content div -->
+            <div class="grid grid-rows-3 gap-4">
+                <div class="flex lg:max-w-[490px] box-shadow lg:gap-9 py-6 lg:pl-7 items-center rounded-[20px]">
+                    <div class="w-[78px]">
+                        <img src="./icons/house.png" alt="">
+                    </div>
+                    <div>
+                        <h4 class="text-2xl font-bold text-[#363958] mb-2">Find the Perfect Fit</h4>
+                        <p class="text-base text-[#3E3E3E] lg:max-w-[276px]">Everybody is different, which is why we
+                            offer styles for every body.</p>
+                    </div>
+                </div>
+                <div class="flex lg:max-w-[490px] box-shadow lg:gap-9 py-6 lg:pl-7 items-center rounded-[20px]">
+                    <div class="w-[78px]">
+                        <img src="./icons/house.png" alt="">
+                    </div>
+                    <div>
+                        <h4 class="text-2xl font-bold text-[#363958] mb-2">Find the Perfect Fit</h4>
+                        <p class="text-base text-[#3E3E3E] lg:max-w-[276px]">Everybody is different, which is why we
+                            offer styles for every body.</p>
+                    </div>
+                </div>
+                <div class="flex lg:max-w-[490px] box-shadow lg:gap-9 py-6 lg:pl-7 items-center rounded-[20px]">
+                    <div class="w-[78px]">
+                        <img src="./icons/house.png" alt="">
+                    </div>
+                    <div>
+                        <h4 class="text-2xl font-bold text-[#363958] mb-2">Find the Perfect Fit</h4>
+                        <p class="text-base text-[#3E3E3E] lg:max-w-[276px]">Everybody is different, which is why we
+                            offer styles for every body.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- image div -->
+             <div>
+                <img src="./images/shopping.png" alt="">
+             </div>
+          </div>
     </main>
 </body>
 </html>
